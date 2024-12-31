@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Menar\source\C++\socket_client\build\CMakeFiles\48f86421e57da13e3efde25e45f089ff\Continuous.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Menar\source\C++\socket_client\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Menar\source\C++\socket_client\build\CMakeFiles\Continuous" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A30014BB-932B-3EB5-B1D8-6124C31B5955}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
