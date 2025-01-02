@@ -4,6 +4,12 @@
     <ClCompile Include="C:\Users\Menar\source\C++\socket_client\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Menar\source\C++\socket_client\client\client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Menar\source\C++\socket_client\client\ssl\crypto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Menar\source\C++\socket_client\CMakeLists.txt" />

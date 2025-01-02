@@ -322,6 +322,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\Menar\source\C++\socket_client\main.cpp" />
+    <ClCompile Include="C:\Users\Menar\source\C++\socket_client\client\client.cpp" />
+    <ClCompile Include="C:\Users\Menar\source\C++\socket_client\client\ssl\crypto.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Menar\source\C++\socket_client\build\ZERO_CHECK.vcxproj">

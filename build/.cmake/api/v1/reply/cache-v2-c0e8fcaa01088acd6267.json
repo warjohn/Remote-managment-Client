@@ -1255,11 +1255,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/Git/cmd/git.exe"
 		},
 		{
 			"name" : "HGCOMMAND",
@@ -1299,11 +1299,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a library."
+					"value" : ""
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "LIB_EAY_LIBRARY_DEBUG-NOTFOUND"
+			"type" : "UNINITIALIZED",
+			"value" : ""
 		},
 		{
 			"name" : "LIB_EAY_LIBRARY_RELEASE",
@@ -1315,11 +1315,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a library."
+					"value" : ""
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "LIB_EAY_LIBRARY_RELEASE-NOTFOUND"
+			"type" : "UNINITIALIZED",
+			"value" : ""
 		},
 		{
 			"name" : "LIB_EAY_RELEASE",
@@ -1463,11 +1463,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a library."
+					"value" : ""
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "SSL_EAY_LIBRARY_DEBUG-NOTFOUND"
+			"type" : "UNINITIALIZED",
+			"value" : ""
 		},
 		{
 			"name" : "SSL_EAY_LIBRARY_RELEASE",
@@ -1479,11 +1479,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a library."
+					"value" : ""
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "SSL_EAY_LIBRARY_RELEASE-NOTFOUND"
+			"type" : "UNINITIALIZED",
+			"value" : ""
 		},
 		{
 			"name" : "SSL_EAY_RELEASE",

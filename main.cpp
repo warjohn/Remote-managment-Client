@@ -1,42 +1,21 @@
 #include <iostream>
 #include <cstring>
-#include <openssl/ssl.h>
-#include <openssl/err.h>
-#include <winsock2.h>
-#include <ws2tcpip.h>
 #include <string>
+#include "client/client.h"
 
-#pragma comment(lib, "ws2_32.lib")
 
-void initOpenSSL() {
-    // Инициализация библиотеки OpenSSL
-    SSL_library_init();
-    OpenSSL_add_all_algorithms();
-    SSL_load_error_strings();
-}
-
-SSL_CTX* createClientContext() {
-    // Создание SSL контекста
-    const SSL_METHOD* method = TLS_client_method();
-    SSL_CTX* ctx = SSL_CTX_new(method);
-    if (!ctx) {
-        std::cerr << "Unable to create SSL context." << std::endl;
-        ERR_print_errors_fp(stderr);
-        exit(EXIT_FAILURE);
-    }
-    return ctx;
-}
-
-void configureClientContext(SSL_CTX* ctx) {
-    // Установка доверенного корневого сертификата
-    if (!SSL_CTX_load_verify_locations(ctx, "ca.crt", nullptr)) {
-        std::cerr << "Failed to load CA certificate." << std::endl;
-        ERR_print_errors_fp(stderr);
-        exit(EXIT_FAILURE);
-    }
-}
 
 int main() {
+
+    int port = 2222;
+    const char* host = "localhost";
+
+    SocketClient skclient(port, host);
+    skclient.sendRequest();
+
+    return 0;
+
+/*
     // Инициализация WinSock
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
@@ -128,4 +107,5 @@ int main() {
     // Очистка WinSock
     WSACleanup();
     return 0;
+*/
 }

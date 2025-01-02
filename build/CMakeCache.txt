@@ -225,14 +225,11 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
+//Path to a program.
+GITCOMMAND:FILEPATH=C:/Program Files/Git/cmd/git.exe
+
 //Path to a library.
 LIB_EAY_DEBUG:FILEPATH=C:/Users/Menar/source/C++/vcpkg/installed/x64-windows/lib/libcrypto.lib
-
-//Path to a library.
-LIB_EAY_LIBRARY_DEBUG:FILEPATH=LIB_EAY_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-LIB_EAY_LIBRARY_RELEASE:FILEPATH=LIB_EAY_LIBRARY_RELEASE-NOTFOUND
 
 //Path to a library.
 LIB_EAY_RELEASE:FILEPATH=C:/Users/Menar/source/C++/vcpkg/installed/x64-windows/lib/libcrypto.lib
@@ -257,12 +254,6 @@ SITE:STRING=DESKTOP-UU4U44E
 
 //Path to a library.
 SSL_EAY_DEBUG:FILEPATH=C:/Users/Menar/source/C++/vcpkg/installed/x64-windows/lib/libssl.lib
-
-//Path to a library.
-SSL_EAY_LIBRARY_DEBUG:FILEPATH=SSL_EAY_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-SSL_EAY_LIBRARY_RELEASE:FILEPATH=SSL_EAY_LIBRARY_RELEASE-NOTFOUND
 
 //Path to a library.
 SSL_EAY_RELEASE:FILEPATH=C:/Users/Menar/source/C++/vcpkg/installed/x64-windows/lib/libssl.lib
@@ -421,10 +412,8 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[C:/Users/Menar/source/C++/vcpkg/installed/x64-windows/lib/libcrypto.lib][C:/Users/Menar/source/C++/vcpkg/installed/x64-windows/include][c ][v3.4.0()]
-//ADVANCED property for variable: LIB_EAY_LIBRARY_DEBUG
-LIB_EAY_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: LIB_EAY_LIBRARY_RELEASE
-LIB_EAY_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND
@@ -435,8 +424,4 @@ MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SSL_EAY_LIBRARY_DEBUG
-SSL_EAY_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SSL_EAY_LIBRARY_RELEASE
-SSL_EAY_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 

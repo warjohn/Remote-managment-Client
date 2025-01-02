@@ -10,7 +10,7 @@ include_directories(C:/Users/Menar/source/C++/vcpkg/installed/x64-windows/includ
 link_directories(C:/Users/Menar/source/C++/vcpkg/installed/x64-windows/lib)
 
 # Создание исполнимого файла
-add_executable(socket_client main.cpp)
+add_executable(socket_client main.cpp client/client.cpp client/ssl/crypto.cpp)
 
 # Линковка с OpenSSL
 target_link_libraries(socket_client PRIVATE OpenSSL::SSL)
