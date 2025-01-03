@@ -9,9 +9,9 @@
 class Crypto {
 public:
 
-    void start();
 
     bool getCert();
+    std::string getFilePath();
 
 private:
 

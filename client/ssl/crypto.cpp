@@ -43,3 +43,7 @@ bool Crypto::getCert() {
         return true; //file is present
     }
 }
+
+std::string Crypto::getFilePath() { 
+    return file_path;
+}

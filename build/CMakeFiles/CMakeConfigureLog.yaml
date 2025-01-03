@@ -2574,3 +2574,647 @@ events:
       Microsoft (R) Incremental Linker Version 14.41.34120.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.11.2+c078802d4 ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 03.01.2025 14:10:49.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+        ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+        ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        ╨д╨░╨╣╨╗ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      
+      ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 0
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.29
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/3.29.5-msvc4/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.11.2+c078802d4 ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 03.01.2025 14:10:51.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+        ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+        ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        ╨д╨░╨╣╨╗ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      
+      ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 0
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.35
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-u7a505"
+      binary: "C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-u7a505"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-u7a505'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e8e06.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.11.2+c078802d4 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 03.01.2025 14:10:52.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u7a505\\cmTC_e8e06.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_e8e06.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u7a505\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_e8e06.dir\\Debug\\cmTC_e8e06.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_e8e06.dir\\Debug\\cmTC_e8e06.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_e8e06.dir\\Debug\\cmTC_e8e06.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e8e06.dir\\Debug\\\\" /Fd"cmTC_e8e06.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.41.34120 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e8e06.dir\\Debug\\\\" /Fd"cmTC_e8e06.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u7a505\\Debug\\cmTC_e8e06.exe" /INCREMENTAL /ILK:"cmTC_e8e06.dir\\Debug\\cmTC_e8e06.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-u7a505/Debug/cmTC_e8e06.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-u7a505/Debug/cmTC_e8e06.lib" /MACHINE:X64  /machine:x64 cmTC_e8e06.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_e8e06.vcxproj -> C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u7a505\\Debug\\cmTC_e8e06.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u7a505\\Debug\\cmTC_e8e06.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_e8e06.dir\\Debug\\cmTC_e8e06.tlog\\cmTC_e8e06.write.1u.tlog" "cmTC_e8e06.dir\\Debug\\vcpkg.applocal.log"
+          "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+          ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u7a505\\Debug\\cmTC_e8e06.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_e8e06.dir\\Debug\\cmTC_e8e06.tlog\\cmTC_e8e06.write.1u.tlog" "cmTC_e8e06.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u7a505\\Debug\\cmTC_e8e06.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_e8e06.dir\\Debug\\cmTC_e8e06.tlog\\cmTC_e8e06.write.1u.tlog" "cmTC_e8e06.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_e8e06.dir\\Debug\\cmTC_e8e06.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_e8e06.dir\\Debug\\cmTC_e8e06.tlog\\cmTC_e8e06.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u7a505\\cmTC_e8e06.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.15
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34120.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-hvtcmv"
+      binary: "C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-hvtcmv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-hvtcmv'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8e769.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.11.2+c078802d4 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 03.01.2025 14:10:54.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvtcmv\\cmTC_8e769.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_8e769.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvtcmv\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_8e769.dir\\Debug\\cmTC_8e769.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_8e769.dir\\Debug\\cmTC_8e769.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_8e769.dir\\Debug\\cmTC_8e769.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8e769.dir\\Debug\\\\" /Fd"cmTC_8e769.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.41.34120 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8e769.dir\\Debug\\\\" /Fd"cmTC_8e769.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvtcmv\\Debug\\cmTC_8e769.exe" /INCREMENTAL /ILK:"cmTC_8e769.dir\\Debug\\cmTC_8e769.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-hvtcmv/Debug/cmTC_8e769.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-hvtcmv/Debug/cmTC_8e769.lib" /MACHINE:X64  /machine:x64 cmTC_8e769.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_8e769.vcxproj -> C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvtcmv\\Debug\\cmTC_8e769.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvtcmv\\Debug\\cmTC_8e769.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_8e769.dir\\Debug\\cmTC_8e769.tlog\\cmTC_8e769.write.1u.tlog" "cmTC_8e769.dir\\Debug\\vcpkg.applocal.log"
+          "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+          ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvtcmv\\Debug\\cmTC_8e769.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_8e769.dir\\Debug\\cmTC_8e769.tlog\\cmTC_8e769.write.1u.tlog" "cmTC_8e769.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvtcmv\\Debug\\cmTC_8e769.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_8e769.dir\\Debug\\cmTC_8e769.tlog\\cmTC_8e769.write.1u.tlog" "cmTC_8e769.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_8e769.dir\\Debug\\cmTC_8e769.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_8e769.dir\\Debug\\cmTC_8e769.tlog\\cmTC_8e769.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvtcmv\\cmTC_8e769.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.20
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34120.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.11.2+c078802d4 ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 03.01.2025 19:24:29.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+        ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+        ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        ╨д╨░╨╣╨╗ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdC\\CompilerIdC.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      
+      ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 0
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.00
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/3.29.5-msvc4/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.11.2+c078802d4 ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 03.01.2025 19:24:31.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+        ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+        ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        ╨д╨░╨╣╨╗ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\3.29.5-msvc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      
+      ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 0
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.98
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/3.29.5-msvc4/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-bf5vq4"
+      binary: "C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-bf5vq4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-bf5vq4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3d14b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.11.2+c078802d4 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 03.01.2025 19:24:32.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bf5vq4\\cmTC_3d14b.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_3d14b.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bf5vq4\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_3d14b.dir\\Debug\\cmTC_3d14b.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_3d14b.dir\\Debug\\cmTC_3d14b.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_3d14b.dir\\Debug\\cmTC_3d14b.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d14b.dir\\Debug\\\\" /Fd"cmTC_3d14b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.41.34120 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d14b.dir\\Debug\\\\" /Fd"cmTC_3d14b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bf5vq4\\Debug\\cmTC_3d14b.exe" /INCREMENTAL /ILK:"cmTC_3d14b.dir\\Debug\\cmTC_3d14b.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-bf5vq4/Debug/cmTC_3d14b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-bf5vq4/Debug/cmTC_3d14b.lib" /MACHINE:X64  /machine:x64 cmTC_3d14b.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_3d14b.vcxproj -> C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bf5vq4\\Debug\\cmTC_3d14b.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bf5vq4\\Debug\\cmTC_3d14b.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_3d14b.dir\\Debug\\cmTC_3d14b.tlog\\cmTC_3d14b.write.1u.tlog" "cmTC_3d14b.dir\\Debug\\vcpkg.applocal.log"
+          "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+          ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bf5vq4\\Debug\\cmTC_3d14b.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_3d14b.dir\\Debug\\cmTC_3d14b.tlog\\cmTC_3d14b.write.1u.tlog" "cmTC_3d14b.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bf5vq4\\Debug\\cmTC_3d14b.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_3d14b.dir\\Debug\\cmTC_3d14b.tlog\\cmTC_3d14b.write.1u.tlog" "cmTC_3d14b.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_3d14b.dir\\Debug\\cmTC_3d14b.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_3d14b.dir\\Debug\\cmTC_3d14b.tlog\\cmTC_3d14b.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bf5vq4\\cmTC_3d14b.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.85
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34120.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-cy8snh"
+      binary: "C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-cy8snh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-cy8snh'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0a86c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.11.2+c078802d4 ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 03.01.2025 19:24:33.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cy8snh\\cmTC_0a86c.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_0a86c.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cy8snh\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_0a86c.dir\\Debug\\cmTC_0a86c.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_0a86c.dir\\Debug\\cmTC_0a86c.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_0a86c.dir\\Debug\\cmTC_0a86c.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0a86c.dir\\Debug\\\\" /Fd"cmTC_0a86c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.41.34120 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0a86c.dir\\Debug\\\\" /Fd"cmTC_0a86c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cy8snh\\Debug\\cmTC_0a86c.exe" /INCREMENTAL /ILK:"cmTC_0a86c.dir\\Debug\\cmTC_0a86c.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-cy8snh/Debug/cmTC_0a86c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Menar/source/C++/socket_client/build/CMakeFiles/CMakeScratch/TryCompile-cy8snh/Debug/cmTC_0a86c.lib" /MACHINE:X64  /machine:x64 cmTC_0a86c.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_0a86c.vcxproj -> C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cy8snh\\Debug\\cmTC_0a86c.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cy8snh\\Debug\\cmTC_0a86c.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_0a86c.dir\\Debug\\cmTC_0a86c.tlog\\cmTC_0a86c.write.1u.tlog" "cmTC_0a86c.dir\\Debug\\vcpkg.applocal.log"
+          "pwsh.exe" ╨╜╨╡ ╤П╨▓╨╗╤П╨╡╤В╤Б╤П ╨▓╨╜╤Г╤В╤А╨╡╨╜╨╜╨╡╨╣ ╨╕╨╗╨╕ ╨▓╨╜╨╡╤И╨╜╨╡╨╣
+          ╨║╨╛╨╝╨░╨╜╨┤╨╛╨╣, ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╨╛╨╣ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨░╨║╨╡╤В╨╜╤Л╨╝ ╤Д╨░╨╣╨╗╨╛╨╝.
+          ╨Т╤Л╤Е╨╛╨┤ ╨╕╨╖ ╨║╨╛╨╝╨░╨╜╨┤╤Л "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cy8snh\\Debug\\cmTC_0a86c.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_0a86c.dir\\Debug\\cmTC_0a86c.tlog\\cmTC_0a86c.write.1u.tlog" "cmTC_0a86c.dir\\Debug\\vcpkg.applocal.log"" ╤Б ╨║╨╛╨┤╨╛╨╝ 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Menar\\source\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cy8snh\\Debug\\cmTC_0a86c.exe" "C:\\Users\\Menar\\source\\C++\\vcpkg\\installed\\x64-windows\\bin" "cmTC_0a86c.dir\\Debug\\cmTC_0a86c.tlog\\cmTC_0a86c.write.1u.tlog" "cmTC_0a86c.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_0a86c.dir\\Debug\\cmTC_0a86c.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_0a86c.dir\\Debug\\cmTC_0a86c.tlog\\cmTC_0a86c.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Menar\\source\\C++\\socket_client\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cy8snh\\cmTC_0a86c.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.86
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34120.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...

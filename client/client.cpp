@@ -1,9 +1,14 @@
 #include "client.h"
 #include <iostream>
-#include <WinSock2.h>
+#include <winsock2.h>
 #include <ws2tcpip.h>
+#include <openssl/ssl.h>
+#include <openssl/err.h>
 #include <cstring>
 #include "ssl/crypto.h"
+#include <openssl/applink.c>
+#include <fstream>
+#include <string>
 
 SocketClient::SocketClient(int port, const char* host) {
     this->port = port;
@@ -12,67 +17,156 @@ SocketClient::SocketClient(int port, const char* host) {
 }
 
 SocketClient::~SocketClient() {
-    shutdown(clientSocket, SD_BOTH);
-    closesocket(clientSocket);  
+    shutdown(sock, SD_BOTH);
+    closesocket(sock);  
     WSACleanup();  
     std::cout << "Client socket closed" << std::endl;
 }
 
-void SocketClient::initWinSock() { 
+bool SocketClient::initializeWinsock() {
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
         std::cerr << "WSAStartup failed with error: " << WSAGetLastError() << std::endl;
-        return;
+        return false;
     }
+    return true;
 }
 
-void SocketClient::initClientSock() {
-    initWinSock();
-    clientSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-    if (clientSocket == INVALID_SOCKET) {
+void SocketClient::createSocket() {
+    sock = socket(AF_INET, SOCK_STREAM, 0);
+    if (sock == INVALID_SOCKET) {
         std::cerr << "Socket creation failed with error: " << WSAGetLastError() << std::endl;
         WSACleanup();
-        return;
     }
 }
 
-void SocketClient::settingsSocket() {
-    struct sockaddr_in serverAddr;
-    serverAddr.sin_family = AF_INET;
-    serverAddr.sin_port = htons(port); 
-    if (inet_pton(AF_INET, "localhost", &serverAddr.sin_addr) <= 0) { 
-        std::cerr << "Invalid address" << std::endl;
-        shutdown(clientSocket, SD_BOTH);
-        WSACleanup();
-        return;
-    }
-}
-
-void SocketClient::connectSocket() {
-    initWinSock();
+bool SocketClient::connectToServer() {
     struct sockaddr_in serverAddr;
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(port);
-    if (connect((int)clientSocket, (struct sockaddr*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) {
+    inet_pton(AF_INET, host, &serverAddr.sin_addr);
+
+    if (connect(sock, (struct sockaddr*)&serverAddr, sizeof(serverAddr)) < 0) {
         std::cerr << "Connection failed with error: " << WSAGetLastError() << std::endl;
-        shutdown(clientSocket, SD_BOTH);
+        closesocket(sock);
         WSACleanup();
-        return;
+        return false;
     }
+    return true;
 }
 
 
+void SocketClient::send_ssl_data(SSL *ssl, const char *data, int data_len) {
+    int bytes_sent = 0;
 
-void SocketClient::sendRequest() {
+    bytes_sent = SSL_write(ssl, data, data_len);
+
+    if (bytes_sent <= 0) {
+        int error_code = SSL_get_error(ssl, bytes_sent);
+        std::cerr << "SSL_write error: " << error_code << std::endl;
+    } else {
+        std::cout << "Sent " << bytes_sent << " bytes." << std::endl;
+    }
+}
+std::string receiveData(SSL* ssl) {
+    char buffer[4096];
+    std::vector<char> receivedData;
+    int bytesReceived;
+
+    while ((bytesReceived = SSL_read(ssl, buffer, sizeof(buffer) - 1)) > 0) {
+        receivedData.insert(receivedData.end(), buffer, buffer + bytesReceived);
+        std::cout << "Received " << bytesReceived << " bytes." << std::endl;
+    }
+    
+    receivedData.push_back('\0');
+    return std::string(receivedData.begin(), receivedData.end() - 1);
+}
+
+bool SocketClient::initializeSSL(const char* msg, std::string* file_path) {    
+    SSL_load_error_strings();
+    OpenSSL_add_ssl_algorithms();
+
+    SSL_CTX* ctx = SSL_CTX_new(TLS_client_method());
+    if (!ctx) {
+        std::cerr << "SSL_CTX creation failed." << std::endl;
+        ERR_print_errors_fp(stderr); // Логирование ошибок OpenSSL
+        return false;
+    }
+
+    SSL* ssl = SSL_new(ctx);
+    SSL_set_fd(ssl, (int)sock);
+
+    if (SSL_connect(ssl) <= 0) {
+        std::cerr << "SSL connection failed: " << ERR_error_string(ERR_get_error(), nullptr) << std::endl;
+        ERR_print_errors_fp(stderr); // Логирование ошибок OpenSSL
+        SSL_free(ssl);
+        SSL_CTX_free(ctx);
+        return false;
+    } else {
+        std::cout << "SSL connection alright" << std::endl;
+    }
+
+    std::cout << "SSL connection established." << std::endl;
+    // Ваш код после установления соединения
+    
+    send_ssl_data(ssl, msg, strlen(msg));
+
+    std::string serverMessage = receiveData(ssl);
+
+    //TODO дописать эту часть 
+    std::fstream outFile("/file.csv", std::ios::out);  
+    if (!outFile) {
+        std::cerr << "Ошибка: не удалось создать файл по пути " << file_path << ". Причина: " << strerror(errno) << std::endl;
+    } else {
+        outFile << serverMessage;
+        outFile.close();
+    }
+
+
+    SSL_shutdown(ssl);
+    SSL_free(ssl);
+    SSL_CTX_free(ctx);
+    return true;
+}
+
+void SocketClient::cleanup(SOCKET sock) {
+    closesocket(sock);
+    WSACleanup();
+}
+
+void SocketClient::sendRequest(const char* msg) {
     Crypto crp;
     bool is_file = crp.getCert();
-    
-    if (is_file) { 
-        std::cout << "is_file - \t " << is_file << std::endl;
-        initClientSock();
-        //settingsSocket();
-        connectSocket();
-    } else {
+    std::string file_path = crp.getFilePath();
+    std::cout << "is_file - \t " << is_file << std::endl;
 
+    if (is_file) {
+        std::cout << "False" << std::endl;
+
+        // Инициализация Winsock
+        if (!initializeWinsock()) {
+            return;
+        }
+
+        // Создание сокета
+        createSocket();
+        if (sock == INVALID_SOCKET) {
+            return;
+        }
+
+        // Подключение к серверу
+        if (!connectToServer()) {
+            return;
+        }
+
+        // Инициализация OpenSSL
+        if (!initializeSSL(msg, &file_path)) {
+            return;
+        }
+
+        // Очистка ресурсов
+        cleanup(sock);
+    } else {
+        std::cout << "True" << std::endl;
     }
 }

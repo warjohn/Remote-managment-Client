@@ -8,10 +8,11 @@
 int main() {
 
     int port = 2222;
-    const char* host = "localhost";
+    const char* host = "127.0.0.1";
+    const char* msg = "new";
 
     SocketClient skclient(port, host);
-    skclient.sendRequest();
+    skclient.sendRequest(msg);
 
     return 0;
 
