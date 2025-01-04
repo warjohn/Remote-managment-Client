@@ -186,30 +186,31 @@ void SocketClient::sendRequest(const char* msg) {
         if (sock == INVALID_SOCKET) {
             return;
         }
+
+        if (!connectToServer()) {
+            return;
+        }
         // Инициализация OpenSSL
         SSL_load_error_strings();
         OpenSSL_add_ssl_algorithms();
 
         // Создание SSL_CTX
         SSL_CTX* ctx = SSL_CTX_new(TLS_client_method());
+        SSL_CTX_set_min_proto_version(ctx, TLS1_2_VERSION);
+        SSL_CTX_set_max_proto_version(ctx, TLS1_2_VERSION);
         if (!ctx) {
             std::cerr << "SSL_CTX creation failed." << std::endl;
             ERR_print_errors_fp(stderr);
             return;
         }
-
-        // Загрузка приватного и публичного ключей клиента
-        const char* privateKeyPath = "clientKeys/client.key";  // Путь к приватному ключу
-        const char* publicKeyPath = "clientKeys/client.crt";    // Путь к публичному ключу
-
-        if (!SSL_CTX_use_certificate_file(ctx, publicKeyPath, SSL_FILETYPE_PEM)) {
+        if (!SSL_CTX_use_certificate_file(ctx, "clientKeys/client.crt", SSL_FILETYPE_PEM)) {
             std::cerr << "Unable to load certificate." << std::endl;
             ERR_print_errors_fp(stderr);
             SSL_CTX_free(ctx);
             return;
         }
 
-        if (!SSL_CTX_use_PrivateKey_file(ctx, privateKeyPath, SSL_FILETYPE_PEM)) {
+        if (!SSL_CTX_use_PrivateKey_file(ctx, "clientKeys/client.key", SSL_FILETYPE_PEM)) {
             std::cerr << "Unable to load private key." << std::endl;
             ERR_print_errors_fp(stderr);
             SSL_CTX_free(ctx);
@@ -222,12 +223,13 @@ void SocketClient::sendRequest(const char* msg) {
 
         // Установление SSL-соединения
         if (SSL_connect(ssl) <= 0) {
-            int error_code = SSL_get_error(ssl, -1);
-            std::cerr << "SSL connection failed: " << error_code << std::endl;
-            ERR_print_errors_fp(stderr);
+            std::cerr << "SSL connection failed: " << ERR_error_string(ERR_get_error(), nullptr) << std::endl;
+            ERR_print_errors_fp(stderr); // Логирование ошибок OpenSSL
+            SSL_free(ssl);
+            SSL_CTX_free(ctx);
             return;
         } else {
-            std::cout << "SSL connection established." << std::endl;
+            std::cout << "SSL connection alright" << std::endl;
         }
 
         // Отправка "Hello, World!" серверу
