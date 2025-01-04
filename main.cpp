@@ -9,7 +9,7 @@ int main() {
 
     int port = 2222;
     const char* host = "127.0.0.1";
-    const char* msg = "new";
+    const char* msg = "close";
 
     SocketClient skclient(port, host);
     skclient.sendRequest(msg);

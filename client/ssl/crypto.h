@@ -12,6 +12,7 @@ public:
 
     bool getCert();
     std::string getFilePath();
+    void generate_client_cert(const char* ca_cert_file);
 
 private:
 
@@ -21,6 +22,7 @@ private:
     void initOpenSSL();
     void createClientContext();
     void configureClientContext();
+    
 
 };
 

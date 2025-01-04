@@ -82,7 +82,21 @@ std::string receiveData(SSL* ssl) {
     return std::string(receivedData.begin(), receivedData.end() - 1);
 }
 
-bool SocketClient::initializeSSL(const char* msg, std::string* file_path) {    
+bool writeServerData(std::string &message, std::string* file_path) {
+    std::fstream file;
+    file.open(*file_path, std::ios::out);
+    if (!file) {
+        std::cout << "Error in file creation" << std::endl;
+        return false;
+    } else {
+        std::cout << "Create file" << std::endl;
+        file << message;
+        file.close();
+        return true;
+    }
+}
+
+bool SocketClient::initializeSSL(const char* msg, std::string* file_path, Crypto crp) {    
     SSL_load_error_strings();
     OpenSSL_add_ssl_algorithms();
 
@@ -107,20 +121,18 @@ bool SocketClient::initializeSSL(const char* msg, std::string* file_path) {
     }
 
     std::cout << "SSL connection established." << std::endl;
-    // Ваш код после установления соединения
-    
+
     send_ssl_data(ssl, msg, strlen(msg));
 
-    std::string serverMessage = receiveData(ssl);
-
-    //TODO дописать эту часть 
-    std::fstream outFile("/file.csv", std::ios::out);  
-    if (!outFile) {
-        std::cerr << "Ошибка: не удалось создать файл по пути " << file_path << ". Причина: " << strerror(errno) << std::endl;
+    std::string &serverMessage = receiveData(ssl);
+    if (writeServerData(serverMessage, file_path)) {
+        std::cout << "Process data - successfull" << std::endl; 
     } else {
-        outFile << serverMessage;
-        outFile.close();
+        std::cout << "Process data - invalid" << std::endl;
     }
+
+    const char* cstr = file_path->c_str(); 
+    crp.generate_client_cert(cstr);
 
 
     SSL_shutdown(ssl);
@@ -138,11 +150,8 @@ void SocketClient::sendRequest(const char* msg) {
     Crypto crp;
     bool is_file = crp.getCert();
     std::string file_path = crp.getFilePath();
-    std::cout << "is_file - \t " << is_file << std::endl;
-
     if (is_file) {
-        std::cout << "False" << std::endl;
-
+        msg = "new";
         // Инициализация Winsock
         if (!initializeWinsock()) {
             return;
@@ -160,7 +169,7 @@ void SocketClient::sendRequest(const char* msg) {
         }
 
         // Инициализация OpenSSL
-        if (!initializeSSL(msg, &file_path)) {
+        if (!initializeSSL(msg, &file_path, crp)) {
             return;
         }
 
@@ -168,5 +177,69 @@ void SocketClient::sendRequest(const char* msg) {
         cleanup(sock);
     } else {
         std::cout << "True" << std::endl;
+        // Инициализация Winsock
+        if (!initializeWinsock()) {
+            return;
+        }
+
+        createSocket();
+        if (sock == INVALID_SOCKET) {
+            return;
+        }
+        // Инициализация OpenSSL
+        SSL_load_error_strings();
+        OpenSSL_add_ssl_algorithms();
+
+        // Создание SSL_CTX
+        SSL_CTX* ctx = SSL_CTX_new(TLS_client_method());
+        if (!ctx) {
+            std::cerr << "SSL_CTX creation failed." << std::endl;
+            ERR_print_errors_fp(stderr);
+            return;
+        }
+
+        // Загрузка приватного и публичного ключей клиента
+        const char* privateKeyPath = "clientKeys/client.key";  // Путь к приватному ключу
+        const char* publicKeyPath = "clientKeys/client.crt";    // Путь к публичному ключу
+
+        if (!SSL_CTX_use_certificate_file(ctx, publicKeyPath, SSL_FILETYPE_PEM)) {
+            std::cerr << "Unable to load certificate." << std::endl;
+            ERR_print_errors_fp(stderr);
+            SSL_CTX_free(ctx);
+            return;
+        }
+
+        if (!SSL_CTX_use_PrivateKey_file(ctx, privateKeyPath, SSL_FILETYPE_PEM)) {
+            std::cerr << "Unable to load private key." << std::endl;
+            ERR_print_errors_fp(stderr);
+            SSL_CTX_free(ctx);
+            return;
+        }
+
+        // Создание SSL-объекта и привязка его к сокету
+        SSL* ssl = SSL_new(ctx);
+        SSL_set_fd(ssl, (int)sock);
+
+        // Установление SSL-соединения
+        if (SSL_connect(ssl) <= 0) {
+            int error_code = SSL_get_error(ssl, -1);
+            std::cerr << "SSL connection failed: " << error_code << std::endl;
+            ERR_print_errors_fp(stderr);
+            return;
+        } else {
+            std::cout << "SSL connection established." << std::endl;
+        }
+
+        // Отправка "Hello, World!" серверу
+        const char* msg = "Hello, World!";
+        send_ssl_data(ssl, msg, strlen(msg));
+
+        // Закрытие SSL-соединения
+        SSL_shutdown(ssl);
+        SSL_free(ssl);
+        SSL_CTX_free(ctx);
+
+        // Очистка ресурсов
+        cleanup(sock);
     }
 }
