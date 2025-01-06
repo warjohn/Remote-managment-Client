@@ -37,7 +37,7 @@ void Crypto::configureClientContext() {
 
 bool Crypto::getCert() {
     if (std::ifstream(file_path)) {
-        std::cout << "File already exists" << std::endl;
+        //std::cout << "File already exists" << std::endl;
         return false; //file is not present
     } else {
         return true; //file is present

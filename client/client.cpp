@@ -65,7 +65,7 @@ void SocketClient::send_ssl_data(SSL *ssl, const char *data, int data_len) {
         int error_code = SSL_get_error(ssl, bytes_sent);
         std::cerr << "SSL_write error: " << error_code << std::endl;
     } else {
-        std::cout << "Sent " << bytes_sent << " bytes." << std::endl;
+        //std::cout << "Sent " << bytes_sent << " bytes." << std::endl;
     }
 }
 std::string receiveData(SSL* ssl) {
@@ -176,7 +176,7 @@ void SocketClient::sendRequest(const char* msg) {
         // Очистка ресурсов
         cleanup(sock);
     } else {
-        std::cout << "True" << std::endl;
+        //std::cout << "True" << std::endl;
         // Инициализация Winsock
         if (!initializeWinsock()) {
             return;
@@ -228,12 +228,9 @@ void SocketClient::sendRequest(const char* msg) {
             SSL_free(ssl);
             SSL_CTX_free(ctx);
             return;
-        } else {
-            std::cout << "SSL connection alright" << std::endl;
-        }
+        } 
 
         // Отправка "Hello, World!" серверу
-        const char* msg = "Hello, World!";
         send_ssl_data(ssl, msg, strlen(msg));
 
         // Закрытие SSL-соединения
